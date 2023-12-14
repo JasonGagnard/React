@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const InscriptionPage = () => {
   const [email, setEmail] = useState('');
@@ -52,7 +53,9 @@ const InscriptionPage = () => {
             J'accepte les conditions d'utilisation.
           </label>
         </div>
-        <button type="submit">S'inscrire</button>
+        <Link to='/'>
+          <button type="submit">S'inscrire</button>
+        </Link>
       </form>
     </div>
   );

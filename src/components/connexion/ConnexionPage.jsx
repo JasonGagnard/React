@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const LoginPage = () => {
+const ConnexionPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,18 +13,18 @@ const LoginPage = () => {
     // Vous pouvez implémenter la logique de connexion ici et rediriger l'utilisateur vers une autre page si la connexion est réussie
   };
 
-//   const handleSignUp = () => {
-    
-//     // Ajoutez ici la logique pour rediriger l'utilisateur vers la page d'inscription
-//     console.log("Rediriger vers la page d'inscription");
-//   };
+  //   const handleSignUp = () => {
+
+  //     // Ajoutez ici la logique pour rediriger l'utilisateur vers la page d'inscription
+  //     console.log("Rediriger vers la page d'inscription");
+  //   };
 
   return (
     <div>
       <h2>Page de Connexion</h2>
       <form onSubmit={handleLogin}>
         <div>
-          <label htmlFor="username">Nom d'utilisateur :</label>
+          <label htmlFor="username">Email :</label>
           <input
             type="text"
             id="username"
@@ -41,7 +41,7 @@ const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Se Connecter</button>
+        <button type="submit" >Se Connecter</button>
       </form>
       <Link to="/inscription">S'inscrire</Link>
       {/* <button onClick={handleSignUp}>S'inscrire</button> */}
@@ -49,4 +49,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default ConnexionPage;

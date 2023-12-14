@@ -1,13 +1,14 @@
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
-import LoginPage from './components/LoginPage'; 
-import InscriptionPage from './components/InscriptionPage';
+import ConnexionPage from './components/connexion/ConnexionPage';
+import InscriptionPage from './components/inscription/InscriptionPage';
+import Navbar from './components/navbar/Navbar';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <LoginPage />
+    element: <ConnexionPage />
   },
   {
     path: '/inscription',
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
     // <div className="App">
     //   <LoginPage /> 
     // </div>
