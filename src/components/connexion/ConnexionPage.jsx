@@ -41,10 +41,10 @@ const ConnexionPage = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" >Se Connecter</button>
+        <Link to='/inscription'>
+          <button type="submit" >Se Connecter</button>
+        </Link>
       </form>
-      <Link to="/inscription">S'inscrire</Link>
-      {/* <button onClick={handleSignUp}>S'inscrire</button> */}
     </div>
   );
 };
